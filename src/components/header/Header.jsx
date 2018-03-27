@@ -5,7 +5,6 @@
 //Core
 import React from 'react'
 
-
 //Images
 import headerLogo from '../../../public/img/logo.png'
 
