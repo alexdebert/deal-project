@@ -1,0 +1,21 @@
+/**
+ * @overview News Section styles.
+ */
+
+#news-section-wrapper {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.news-logo-container {
+  img {
+    width: 100%;
+  }
+}
+
+.news-arrow-container {
+  img {
+    width: 40%;
+  }
+}
