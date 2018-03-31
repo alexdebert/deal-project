@@ -27,7 +27,7 @@ class Tooltip extends Component {
 }
 
 Tooltip.propTypes = {
-	html: PropTypes.string
+	html: PropTypes.string.isRequired
 }
 
 export default Tooltip
