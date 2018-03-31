@@ -5,11 +5,13 @@
 //Core
 import React from 'react'
 
+//Components
+import RatingInformation from '../../containers/ratingInformation/RatingInformation'
+
+
 const RatingSection = () => (
 	<div id="rating-sections-wrapper">
-		<div>
-			<span>{"Ratings of Deal's services"}</span>
-		</div>
+		<RatingInformation />
 		<div>
 			<span>Icons go here</span>
 		</div>

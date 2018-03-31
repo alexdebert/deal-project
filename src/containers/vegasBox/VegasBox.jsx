@@ -12,26 +12,25 @@ class VegasBox extends Component {
 	constructor() {
 		super()
 		this.state = {
-			visible: true
+			isVisible: true
 		}
 	}
 
 	toggleList() {
 		this.setState(prevState => ({
-			visible: !prevState.visible
+			isVisible: !prevState.isVisible
 		}))
 	}
 
 	render () {
-		let hidden = this.state.visible ? '' : 'hidden',
-			vegasBoxListClass = `vegas-box-list ${hidden}`
+		let hidden = this.state.isVisible ? '' : 'hidden'
 
 		return (
 			<div id="vegas-box-wrapper">
 				<div onClick={() => this.toggleList()} className="vegas-box-headline">
 					<h2>Handcrafted Vegas Get Away</h2>
 				</div>
-				<div className={vegasBoxListClass}>
+				<div className={`vegas-box-list ${hidden}`}>
 					<ol>
 						<li>Describe your dream weekend</li>
 						<li>We match you with 1-2 top Vegas specialists who are the best fit. They work together to plan your custom itinerary.</li>

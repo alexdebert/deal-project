@@ -65,6 +65,10 @@ const config = {
 						options: {}
 					}
 				]
+			},
+			{
+				test: /\.html$/,
+				use: ['raw-loader']
 			}
 		]
 	},

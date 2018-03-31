@@ -1,0 +1,20 @@
+/**
+ * @overview Rating information styles.
+ */
+
+#rating-sections-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  span{
+    display: inline-block;
+    float: left;
+    padding: 3px 0 10px 25px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #073488;
+    font-weight: 400;
+    letter-spacing: 0;
+    cursor: pointer;
+  }
+}
