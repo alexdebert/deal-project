@@ -6,7 +6,7 @@
 import React from 'react'
 
 //Components
-import RatingSection from '../ratingSections/RatingSections'
+import RatingSection from '../../containers/ratingSections/RatingSections'
 import NewsSection from '../newsSection/NewsSection'
 
 //Styles

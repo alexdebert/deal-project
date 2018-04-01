@@ -1,0 +1,37 @@
+/**
+ * @overview Review styles.
+ */
+
+.review-wrapper-widget {
+  background-color: #fff;
+  border-radius: 3px;
+  height: 150px;
+  overflow: scroll;
+  margin-bottom: 2%;
+  text-align: initial;
+  padding: 2%;
+
+  .review-author {
+    color: #666;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+
+  .star-list-review {
+    width: 50%;
+  }
+
+  .review-date {
+    font-size: 80%;
+    color: #ccc;
+    margin-top: 8px;
+  }
+
+  .review-title {
+    font-weight: 700;
+    margin: 0 0 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+}
+
