@@ -45,26 +45,3 @@ li {
 .hidden {
   display: none;
 }
-
-.vegas-box-button {
-  letter-spacing: 1px;
-  display: inline-block;
-  clear: both;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
-  font-size: 1.1em;
-  font-weight: 400;
-  color: #fff;
-  margin: 5px 0;
-  min-height: 20px;
-  text-align: left;
-  border: 2px solid #ed9300;
-  padding: 6px 15px 6px 30px;
-  background-image: url(/public/img/white-link-arrow.png);
-  background-position: 8px center;
-  background-repeat: no-repeat;
-  background-color: #ed9300;
-  text-transform: capitalize;
-}

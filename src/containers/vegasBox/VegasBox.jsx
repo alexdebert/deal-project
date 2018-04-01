@@ -5,6 +5,9 @@
 //Core
 import React, {Component} from 'react'
 
+//Components
+import ButtonCustom from '../../components/buttonCustom/ButtonCustom'
+
 //Styles
 import './VegasBox.scss'
 
@@ -44,9 +47,7 @@ class VegasBox extends Component {
 						<li>{item2}</li>
 						<li>{item3}</li>
 					</ol>
-					<button className="vegas-box-button">
-						{buttonText}
-					</button>
+					<ButtonCustom className="request-arrow-button" text={buttonText}/>
 				</div>
 			</div>
 		)
