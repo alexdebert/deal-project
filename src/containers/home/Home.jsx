@@ -9,6 +9,7 @@ import React from 'react'
 import HeroImage from '../../components/heroImage/HeroImage'
 import BannerInformation from '../../components/bannerInformation/BannerInformation'
 import VegasBox from '../vegasBox/VegasBox'
+import Summary from '../../components/summary/Summary'
 
 //Styles
 import './Home.scss'
@@ -18,6 +19,7 @@ const Home = () => (
 		<HeroImage />
 		<BannerInformation />
 		<VegasBox />
+		<Summary />
 	</div>
 )
 

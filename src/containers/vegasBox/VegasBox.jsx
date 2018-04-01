@@ -8,6 +8,9 @@ import React, {Component} from 'react'
 //Styles
 import './VegasBox.scss'
 
+//Constants
+import * as constants from '../../constants/content'
+
 class VegasBox extends Component {
 	constructor() {
 		super()
@@ -24,20 +27,25 @@ class VegasBox extends Component {
 
 	render () {
 		let hidden = this.state.isVisible ? '' : 'hidden'
+		const title = constants.VEGAS_BOX_TITLE
+		const item1 = constants.VEGAS_BOXLIST_ITEM_1
+		const item2 = constants.VEGAS_BOXLIST_ITEM_2
+		const item3 = constants.VEGAS_BOXLIST_ITEM_3
+		const buttonText = constants.VEGAS_BOXLIST_BUTTON_TEXT
 
 		return (
 			<div id="vegas-box-wrapper">
 				<div onClick={() => this.toggleList()} className="vegas-box-headline">
-					<h2>Handcrafted Vegas Get Away</h2>
+					<h2>{title}</h2>
 				</div>
 				<div className={`vegas-box-list ${hidden}`}>
 					<ol>
-						<li>Describe your dream weekend</li>
-						<li>We match you with 1-2 top Vegas specialists who are the best fit. They work together to plan your custom itinerary.</li>
-						<li>{"Book the itinerary when you're satisfied"}</li>
+						<li>{item1}</li>
+						<li>{item2}</li>
+						<li>{item3}</li>
 					</ol>
 					<button className="vegas-box-button">
-						Get Started Now
+						{buttonText}
 					</button>
 				</div>
 			</div>
