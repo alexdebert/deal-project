@@ -6,7 +6,7 @@
 import React from 'react'
 
 //Images
-import headerLogo from '../../../public/img/logo.png'
+import headerLogo from '../../../public/logo/logo.png'
 
 //Styles
 import './Header.scss'

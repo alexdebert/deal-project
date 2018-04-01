@@ -10,6 +10,7 @@ import HeroImage from '../../components/heroImage/HeroImage'
 import BannerInformation from '../../components/bannerInformation/BannerInformation'
 import VegasBox from '../vegasBox/VegasBox'
 import Summary from '../../components/summary/Summary'
+import HomePhotos from '../homePhotos/HomePhotos'
 
 //Styles
 import './Home.scss'
@@ -20,6 +21,7 @@ const Home = () => (
 		<BannerInformation />
 		<VegasBox />
 		<Summary />
+		<HomePhotos />
 	</div>
 )
 

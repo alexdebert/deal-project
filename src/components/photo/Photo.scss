@@ -1,0 +1,17 @@
+/**
+ * @overview Photo styles.
+ */
+
+.photo-home-wrapper {
+  width: 30%;
+  height: 100%;
+  margin: 1%;
+  box-shadow: rgba(137,137,137,.8) 0 0 2px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 3%;
+  }
+}

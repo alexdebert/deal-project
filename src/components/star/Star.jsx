@@ -7,7 +7,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 //Image
-import starImage from '../../../public/img/sprite_star.png'
+import starImage from '../../../public/icons/sprite_star.png'
 
 //Styles
 import './Star.scss'

@@ -6,8 +6,8 @@
 import React from 'react'
 
 //Image
-import newsLogo from '../../../public/img/news-logos.png'
-import arrowLogo from '../../../public/img/grey-link-arrow.png'
+import newsLogo from '../../../public/logo/news-logos.png'
+import arrowLogo from '../../../public/icons/grey-link-arrow.png'
 
 //Styles
 import './NewsSection.scss'

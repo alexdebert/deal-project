@@ -17,29 +17,30 @@
   -webkit-box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
   -moz-box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
   box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
-}
 
-h2 {
-  cursor: pointer;
-  text-transform: none;
-  letter-spacing: 1px;
-  font-size: 1.3em;
-  font-weight: 300;
-  word-wrap: break-word;
-  text-align: center;
+  h2 {
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  li {
+    font-size: 90%;
+    line-height: 1.5;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+  }
+
 }
 
 .vegas-box-list {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-li {
-  font-size: 90%;
-  line-height: 1.5;
-  word-wrap: break-word;
-  margin-bottom: 5px;
 }
 
 .hidden {

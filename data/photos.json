@@ -1,0 +1,33 @@
+{
+  "home": [{
+    "id": 1,
+    "title":"Clubs",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-clubs.046a6116.jpg",
+    "detail": "See our Clubs"
+  }, {
+    "id": 2,
+    "title":"Shows",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-shows.5260f276.jpg",
+    "detail": "See our Shows"
+  }, {
+    "id": 3,
+    "title":"Helicopter Tours",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-helicopter.b00344a2.jpg",
+    "detail": "See our Helicopter Tours"
+  }, {
+    "id": 4,
+    "title":"ATVs",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-atvs.09893a3b.jpg",
+    "detail": "See our ATVs"
+  }, {
+    "id": 5,
+    "title":"Excotic Cars",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-cars.b30baa94.jpg",
+    "detail": "See our Excotic Cars"
+  }, {
+    "id": 6,
+    "title":"Shooting Ranges",
+    "imageUrl": "https://deal.global.ssl.fastly.net/consumer/images/act-shooting.59321b6b.jpg",
+    "detail": "See our Shooting Ranges"
+  }]
+}
