@@ -3,6 +3,7 @@
  */
 
 .photo-home-wrapper {
+  position: relative;
   width: 30%;
   height: 100%;
   margin: 1%;
@@ -13,5 +14,12 @@
     font-size: 0.8em;
     line-height: 1.5em;
     padding: 3%;
+  }
+
+  .photo-home-footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
   }
 }

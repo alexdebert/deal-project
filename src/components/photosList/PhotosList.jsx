@@ -15,20 +15,17 @@ const PhotosList = props => {
 		<div className="photos-list-wrapper">
 			{photos.map(photo =>
 				<Photo key={photo.id}
+					id={photo.id}
 					imageUrl={photo.imageUrl}
 					title={photo.title}
-					detail={photo.detail}
-					showOverlay={props.onMouseEnter}
-					hideOverlay={props.onMouseLeave} />
+					detail={photo.detail} />
 			)}
 		</div>
 	)
 }
 
 PhotosList.propTypes = {
-	photos: PropTypes.array.isRequired,
-	onMouseEnter: PropTypes.func,
-	onMouseLeave: PropTypes.func
+	photos: PropTypes.array.isRequired
 }
 
 export default PhotosList

@@ -34,3 +34,29 @@
     text-shadow: rgba(255,255,255,.3) 1px 1px 1px;
   }
 }
+
+.read-more-button {
+  background-image: -webkit-linear-gradient(#fba12f,#d56d21);
+  background-image: -moz-linear-gradient(#fba12f,#d56d21);
+  background-image: linear-gradient(#fba12f,#d56d21);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: arial,Helvetica,sans-serif;
+  color: #fff;
+  margin: 5px 0;
+  min-height: 20px;
+  text-align: center;
+  background: #ed9300;
+  width: auto;
+  border: 1px solid #ed9300;
+  text-transform: uppercase;
+  padding: 3px 8px;
+
+  &:hover {
+    color: #fff;
+    background: #444;
+    border: 1px solid #444;
+  }
+}
