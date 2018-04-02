@@ -1,0 +1,63 @@
+/**
+ * @overview Sidebar styles.
+ */
+
+.home-sidebar-wrapper {
+  margin: auto;
+  width: 80%;
+  display: block;
+}
+
+.home-sidebar-title {
+  text-transform: uppercase;
+  padding-left: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.home-sidebar-list {
+  width: 30%;
+  float: left;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding: 15px 0;
+
+    .active {
+      color: #000;
+    }
+
+    a {
+      cursor: pointer;
+      color: #898989;
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+.home-sidebar-items-wrapper {
+  width: 70%;
+  margin-left: 30%;
+
+  h2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    font-style: italic;
+  }
+}

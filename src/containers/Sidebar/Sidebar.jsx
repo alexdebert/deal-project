@@ -3,13 +3,19 @@
  */
 
 import React, {Component} from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 
 //Routes
 import routes from './sidebarRoutes'
 
 //API
 import {fetchSidebarItems} from '../../api/sidebarService'
+
+//Constants
+import * as constants from '../../constants/content'
+
+//Styles
+import './Sidebar.scss'
 
 class Sidebar extends Component {
 	constructor() {
@@ -31,14 +37,18 @@ class Sidebar extends Component {
 
 	render() {
 		const items = this.state.items
+		const title = constants.SIDEBAR_TITLE
 		return (
 			<Router>
-				<div>
-					<div className="home-sidebar">
+				<div className="home-sidebar-wrapper">
+					<div className="home-sidebar-title">
+						<h2>{title}</h2>
+					</div>
+					<div className="home-sidebar-list">
 						<ul>
 							{items.map(item =>
 								<li key={item.id} >
-									<Link to={item.path}>{item.title}</Link>
+									<NavLink activeClassName="active" to={item.path}>{item.title}</NavLink>
 								</li>
 							)}
 						</ul>
@@ -51,7 +61,7 @@ class Sidebar extends Component {
 								component={route.sidebar}/>
 						))}
 					</div>
-					<div className="home-sidebar-item">
+					<div className="home-sidebar-items-wrapper">
 						{routes.map((route, index) => (
 							<Route
 								key={index}
