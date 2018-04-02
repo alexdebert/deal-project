@@ -1,0 +1,27 @@
+{
+  "items": [{
+    "id": 1,
+    "path": "/",
+    "title":"What Do I Need to Know?"
+  }, {
+    "id": 2,
+    "path": "/where-to-stay",
+    "title":"Where Should I Stay?"
+  }, {
+    "id": 3,
+    "path": "/clubs-and-pool-parties",
+    "title":"What About Clubs and Pool Parties?"
+  }, {
+    "id": 4,
+    "path": "/get-around",
+    "title":"How Do I Get Around Vegas?"
+  }, {
+    "id": 5,
+    "path": "/dinner",
+    "title":"What Should I Have for Dinner?"
+  }, {
+    "id": 6,
+    "path": "/what-else",
+    "title":"What Else Should I Do?"
+  }]
+}
