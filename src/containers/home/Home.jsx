@@ -3,26 +3,57 @@
  */
 
 //Core
-import React from 'react'
+import React, {Component} from 'react'
 
 //Components
 import HeroImage from '../../components/heroImage/HeroImage'
-import BannerInformation from '../../components/bannerInformation/BannerInformation'
+import RatingSection from '../ratingSections/RatingSections'
+import NewsSection from '../../components/newsSection/NewsSection'
 import VegasBox from '../vegasBox/VegasBox'
 import Summary from '../../components/summary/Summary'
-import HomePhotos from '../homePhotos/HomePhotos'
+import PhotosList from '../../components/photosList/PhotosList'
+
+//API
+import {fetchHomePhotos} from '../../api/photoService'
 
 //Styles
 import './Home.scss'
 
-const Home = () => (
-	<div className='home-container'>
-		<HeroImage />
-		<BannerInformation />
-		<VegasBox />
-		<Summary />
-		<HomePhotos />
-	</div>
-)
+class Home extends Component {
+	constructor() {
+		super()
+		this.state = {
+			photos: []
+		}
+	}
+
+	componentDidMount() {
+		fetchHomePhotos()
+			.then(response => {
+				this.setState({
+					photos: response.data.home
+				})
+			})
+			.catch(error => console.error(error.response))
+	}
+
+	render() {
+		const photos = this.state.photos
+		return (
+			<div className='home-container'>
+				<HeroImage />
+				<div className="home-banner-information-wrapper">
+					<RatingSection/>
+					<NewsSection/>
+				</div>
+				<VegasBox />
+				<Summary />
+				<div className="home-photos-wrapper">
+					<PhotosList photos={photos} />
+				</div>
+			</div>
+		)
+	}
+}
 
 export default Home

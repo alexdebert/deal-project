@@ -17,14 +17,18 @@ const PhotosList = props => {
 				<Photo key={photo.id}
 					imageUrl={photo.imageUrl}
 					title={photo.title}
-					detail={photo.detail} />
+					detail={photo.detail}
+					showOverlay={props.onMouseEnter}
+					hideOverlay={props.onMouseLeave} />
 			)}
 		</div>
 	)
 }
 
 PhotosList.propTypes = {
-	photos: PropTypes.array.isRequired
+	photos: PropTypes.array.isRequired,
+	onMouseEnter: PropTypes.func,
+	onMouseLeave: PropTypes.func
 }
 
 export default PhotosList
