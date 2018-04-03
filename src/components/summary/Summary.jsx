@@ -19,7 +19,7 @@ const Summary = () => {
 	const firstParagraph = constants.SUMMARY_FIRST_PARAGRAPH
 	const secondParagraph = constants.SUMMARY_SECOND_PARAGRAPH
 	const readMore = constants.READ_MORE
-	const buttonText = constants.SUMMARY_PLAN_MY_TRIP
+	const buttonText = constants.PLAN_MY_TRIP
 
 	return (
 		<div className="summary-wrapper">

@@ -13,6 +13,8 @@ import VegasBox from '../vegasBox/VegasBox'
 import Summary from '../../components/summary/Summary'
 import PhotosList from '../../components/photosList/PhotosList'
 import Sidebar from '../Sidebar/Sidebar'
+import CityTour from '../../components/cityTour/CityTour'
+import ReviewSection from '../reviewSection/ReviewSection'
 
 //API
 import {fetchHomePhotos} from '../../api/photoService'
@@ -53,6 +55,8 @@ class Home extends Component {
 					<PhotosList photos={photos} />
 				</div>
 				<Sidebar />
+				<CityTour />
+				<ReviewSection />
 			</div>
 		)
 	}

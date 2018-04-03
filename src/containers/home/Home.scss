@@ -23,3 +23,21 @@
     justify-content: space-between;
   }
 }
+
+.home-city-tour-wrapper {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-city-tour-button {
+    margin: 5% 0;
+    align-self: center;
+    width: 20%;
+  }
+}
